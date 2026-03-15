@@ -597,7 +597,7 @@ function getNearestBigger(number) {
     for (let i = 0; i < arrDigits.length; i += 1) {
       parseToNumber = parseToNumber * 10 + arrDigits[i];
     }
-    return Number(parseToNumber);
+    return parseToNumber;
   }
   for (let i = arrDigits.length - 1; i >= 0; i -= 1) {
     if (arrDigits[i] > arrDigits[pivot]) {
